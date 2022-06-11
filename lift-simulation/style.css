@@ -1,0 +1,88 @@
+#floor{
+    border:1px solid black;
+    
+   
+}
+
+#container{
+    display:flex;
+    
+}
+#button-container{
+    display: flex;
+    flex-direction: column;
+    width: 10%;
+    align-self: center;
+    margin: 20px;
+}
+p{
+    text-align:center;  
+}
+/* #lift-container{
+    border:1px solid black;
+    display: flex;
+    margin:20px;
+}
+#lift{
+    width: 100px;
+    height:100px;
+    background:cadetblue;
+    display: flex;
+}
+
+#lift-door-left{
+    width: 50px;
+    height: 100px;
+    background:red;
+}
+
+#lift-door-right{
+    width: 50px;
+    height: 100px;
+    background:yellow;
+} */
+
+
+
+
+.lifts {
+    width: 80px;
+    height: 120px;
+    background-color: #fff;
+    position: absolute;
+}
+
+.lifts .gate {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+    border: 1px solid #111;
+    background-color: grey;
+}
+
+.lifts #left_gate {
+    left: 0;
+}
+
+.lifts #right_gate {
+    right: 0;
+}
+
+.lifts.stopped .gate {
+    animation-duration: 5s;
+    animation-name: gate_open_close;
+}
+
+@keyframes gate_open_close {
+    from {
+        width: 50%;
+    }
+
+    50% {
+        width: 0%;
+    }
+
+    100% {
+        width: 50%;
+    }
+}
